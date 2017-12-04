@@ -1,0 +1,9 @@
+image: gradle
+
+stages:
+  - analyze-dependencies
+
+inspect:
+  stage: analyze-dependencies
+  script:
+    - gradle dependencyCheckAnalyze --info
